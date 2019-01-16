@@ -13,13 +13,13 @@
   <project path="external/skia" name="platform/external/skia" remote="aosp" />
   <project path="external/jemalloc" name="platform/external/jemalloc" remote="aosp" />
   <project path="external/vixl" name="platform/external/vixl" remote="aosp" />
-  <project path="external/ant-wireless/antradio-library" name="platform/external/ant-wireless/antradio-library" remote="aosp" />
-  <project path="external/ant-wireless/ant_service" name="platform/external/ant-wireless/ant/service" remote="aosp" />
-  <project path="external/arm-optimized-routines" name="platform/external/arm-optimized-routines" remote="aosp" />
-  <project path="external/exfat" name="platform/external/exfat" remote="aosp" />
+  
+  
+  
+ 
   <project path="external/expat" name="platform/external/expat" remote="aosp" />
   <project path="external/freetype" name="platform/external/freetype" remote="aosp" />
-  <project path="external/json-c" name="platform/external/json-c" remote="aosp" />
+
   <project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" remote="aosp" />
   <project path="external/perfetto" name="platform/external/perfetto" remote="aosp" />
   <project path="external/roboto-fonts" name="platform/external/roboto-fonts" remote="aosp" />
@@ -107,7 +107,6 @@
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="los" />
 
   <!-- los vendor repos -->
-  <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="los" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="los" />
   <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="los" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="los" />
@@ -117,5 +116,10 @@
   <!-- los external repos -->
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_service" remote="los" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="los" />
- 
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="los" />
+  <project path="external/json-c" name="android_external_json-c" remote="los" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="los" />
+  <project path="external/exfat" name="android_external_exfat" remote="los" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="los" />
+
 </manifest>
