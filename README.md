@@ -9,7 +9,7 @@ repo init -u https://github.com/future-os/manifest -b pie
 
 ```bash
 # Sync
-repo sync -c -jx --force-sync --no-clone-bundle --no-tags
+repo sync --force-sync --no-clone-bundle
 ```
 
 ### Build ###
