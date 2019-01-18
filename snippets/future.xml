@@ -30,7 +30,7 @@
   </project>
   <project path="build/kati" name="build_kati" remote="future-os" />
   <project path="bootable/recovery" name="bootable_recovery" remote="future-os" />
-  <project path="vendor/future" name="vendor_future" remote="future-os" />
+  <project path="vendor/future" name="vendor_future_new" remote="future-os" />
 
   <!-- Hardware repos -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="future-os" />
