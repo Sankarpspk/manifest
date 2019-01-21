@@ -5,62 +5,68 @@
            fetch="https://github.com/LineageOS"
            revision="refs/heads/lineage-16.0" />
   
-  <!-- aosp system repos -->
+  <project path="bionic" name="bionic" remote="los" />
+  
+  <!-- system repos -->
   <project path="system/keymaster" name="platform/system/keymaster" remote="aosp" />
 
-  <!-- aosp external repos -->
-  <project path="external/libpng" name="platform/external/libpng" remote="aosp" />
-  <project path="external/skia" name="platform/external/skia" remote="aosp" />
-  <project path="external/jemalloc" name="platform/external/jemalloc" remote="aosp" />
-  <project path="external/vixl" name="platform/external/vixl" remote="aosp" />
-  <project path="external/expat" name="platform/external/expat" remote="aosp" />
-  <project path="external/freetype" name="platform/external/freetype" remote="aosp" />
-  <project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" remote="aosp" />
-  <project path="external/perfetto" name="platform/external/perfetto" remote="aosp" />
-  <project path="external/roboto-fonts" name="platform/external/roboto-fonts" remote="aosp" />
-  <project path="external/skqp" name="platform/external/skqp" remote="aosp" />
-  <project path="external/sqlite" name="platform/external/sqlite" remote="aosp" />
-  <project path="external/tinycompress" name="platform/external/tinycompress" remote="aosp" />
-  <project path="external/turbine" name="platform/external/turbine" remote="aosp" />
-  <project path="external/zlib" name="platform/external/zlib" remote="aosp" />
+  <!-- external repos -->
+  <project path="external/libpng" name="android_external_libpng" remote="aosp" />
+  <project path="external/skia" name="android_external_skia" remote="aosp" />
+  <project path="external/jemalloc" name="android_external_jemalloc" remote="aosp" />
+  <project path="external/vixl" name="android_external_vixl" remote="aosp" />
+  <project path="external/expat" name="android_external_expat" remote="aosp" />
+  <project path="external/freetype" name="android_external_freetype" remote="aosp" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="aosp" />
+  <project path="external/perfetto" name="android_external_perfetto" remote="aosp" />
+  <project path="external/roboto-fonts" name="android_external_roboto-fonts" remote="aosp" />
+  <project path="external/skqp" name="android_external_skqp" remote="aosp" />
+  <project path="external/sqlite" name="android_external_sqlite" remote="aosp" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="aosp" />
+  <project path="external/turbine" name="android_external_turbine" remote="aosp" />
+  <project path="external/zlib" name="android_external_zlib" remote="aosp" />
  
-  <!-- aosp frameworks repos -->
-  <projepct path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" remote="aosp" />
-  <project path="frameworks/support" name="platform/frameworks/support" remote="aosp" />
-  <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" remote="aosp" />
+  <!-- frameworks repos -->
+  <projepct path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" remote="aosp" />
+  <project path="frameworks/support" name="android_frameworks_support" remote="aosp" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="aosp" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="future-os" />
+  <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="future-os" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="future-os" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="future-os" />
  
-  <!-- aosp hardware repos -->
-  <project path="hardware/interfaces" name="platform/hardware/interfaces" remote="aosp" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="aosp" />
-  <project path="hardware/nxp/nfc" name="platform/hardware/nxp/nfc" remote="aosp" />
-  <project path="hardware/qcom/power" name="platform/hardware/qcom/power" remote="aosp" />
-  <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" remote="aosp" />
-  <project path="hardware/ril" name="platform/hardware/ril" remote="aosp" />
+  <!-- hardware repos -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="aosp" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="aosp" />
+  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="aosp" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="aosp" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="aosp" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="aosp" />
 
-  <!-- aosp lib repos -->
-  <project path="libcore" name="platform/libcore" remote="aosp" />
+  <!-- lib repos -->
+  <project path="libcore" name="android_libcore" remote="aosp" />
 
-  <!-- aosp packages repos -->
-  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" remote="aosp" />
-  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" remote="aosp" />
-  <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" remote="aosp" />
-  <project path="packages/apps/DocumentsUI" name="platform/packages/apps/DocumentsUI" remote="aosp" />
-  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" remote="aosp" />
-  <project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" remote="aosp" />
-  <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" remote="aosp" />
-  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" remote="aosp" />
-  <project path="packages/apps/SettingsIntelligence" name="platform/packages/apps/SettingsIntelligence" remote="aosp" />
-  <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" remote="aosp" />
-  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" remote="aosp" />
-  <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" remote="aosp" />
-  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" remote="aosp" />
+  <!-- packages repos -->
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="aosp" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="aosp" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="aosp" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="aosp" />
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="aosp" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="aosp" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="aosp" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="aosp" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="aosp" />
+  <project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="aosp" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods/LatinIME" remote="aosp" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="aosp" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="aosp" />
 
   <!-- aosp prebuilts repos -->
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" remote="aosp" />
   <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" remote="aosp" />
   <project path="prebuilts/r8" name="platform/prebuilts/r8" remote="aosp" />
  
-  <!-- los hardware repos -->
+  <!-- hardware repos -->
   <project path="hardware/qcom/audio-caf-msm8916" name="android_hardware_qcom_audio" remote="los" revision="lineage-16.0-caf-8916" />
   <project path="hardware/qcom/audio-caf-msm8952" name="android_hardware_qcom_audio" remote="los" revision="lineage-16.0-caf-8952" />
   <project path="hardware/qcom/audio-caf-msm8960" name="android_hardware_qcom_audio" remote="los" revision="lineage-16.0-caf-8960" />
@@ -69,7 +75,7 @@
   <project path="hardware/qcom/audio-caf-msm8996" name="android_hardware_qcom_audio" remote="los" revision="lineage-16.0-caf-8996" />
   <project path="hardware/qcom/audio-caf-msm8998" name="android_hardware_qcom_audio" remote="los" revision="lineage-16.0-caf-8998" />
  
-  <!-- los hardware repos -->
+  <!-- hardware repos -->
   <project path="hardware/qcom/display-caf-msm8916" name="android_hardware_qcom_display" remote="los" revision="lineage-16.0-caf-8916" />
   <project path="hardware/qcom/display-caf-msm8952" name="android_hardware_qcom_display" remote="los" revision="lineage-16.0-caf-8952" />
   <project path="hardware/qcom/display-caf-msm8960" name="android_hardware_qcom_display" remote="los" revision="lineage-16.0-caf-8960" />
@@ -78,7 +84,7 @@
   <project path="hardware/qcom/display-caf-msm8996" name="android_hardware_qcom_display" remote="los" revision="lineage-16.0-caf-8996" />
   <project path="hardware/qcom/display-caf-msm8998" name="android_hardware_qcom_display" remote="los" revision="lineage-16.0-caf-8998" />
   
-  <!-- los hardware repos -->
+  <!-- hardware repos -->
   <project path="hardware/qcom/media-caf-msm8916" name="android_hardware_qcom_media" remote="los" revision="lineage-16.0-caf-8916" />
   <project path="hardware/qcom/media-caf-msm8952" name="android_hardware_qcom_media" remote="los" revision="lineage-16.0-caf-8952" />
   <project path="hardware/qcom/media-caf-msm8960" name="android_hardware_qcom_media" remote="los" revision="lineage-16.0-caf-8960" />
@@ -87,7 +93,7 @@
   <project path="hardware/qcom/media-caf-msm8996" name="android_hardware_qcom_media" remote="los" revision="lineage-16.0-caf-8996" />
   <project path="hardware/qcom/media-caf-msm8998" name="android_hardware_qcom_media" remote="los" revision="lineage-16.0-caf-8998" />
 
-  <!-- los hardware repos -->
+  <!-- hardware repos -->
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="los" />
   <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="los" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="los" />
@@ -95,20 +101,20 @@
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="los" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="los" />
 
-  <!-- los art repos -->
+  <!-- art repos -->
   <project path="art" name="android_art" remote="los" />
  
-  <!-- los device repos -->
+  <!-- device repos -->
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="los" />
 
-  <!-- los vendor repos -->
+  <!-- vendor repos -->
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="los" />
   <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="los" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="los" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="los" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="los" />
 
-  <!-- los external repos -->
+  <!-- external repos -->
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_service" remote="los" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="los" />
   <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="los" />
